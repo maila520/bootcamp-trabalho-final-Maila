@@ -1,0 +1,9 @@
+uuid: d571b0e6-afa2-4bea-9547-c1926eaf9c6c
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Áreas naturais'
+vid: areas_naturais
+description: null
+weight: 0
+new_revision: false

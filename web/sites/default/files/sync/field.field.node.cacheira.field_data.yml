@@ -1,0 +1,21 @@
+uuid: daff2670-231e-4615-a31b-85d61249e393
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data
+    - node.type.cacheira
+  module:
+    - datetime
+id: node.cacheira.field_data
+field_name: field_data
+entity_type: node
+bundle: cacheira
+label: Data
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

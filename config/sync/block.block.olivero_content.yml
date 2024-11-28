@@ -1,0 +1,34 @@
+uuid: 5c6f4e85-7ea1-4c2f-b9bd-606bce6b3560
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: olivero_content
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Conteúdo da página principal'
+  label_display: '0'
+  provider: system
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/1

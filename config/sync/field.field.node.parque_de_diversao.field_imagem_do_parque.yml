@@ -1,0 +1,38 @@
+uuid: 977c9a10-4917-43a8-8ad9-1ac21daf3a18
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagem_do_parque
+    - node.type.parque_de_diversao
+  module:
+    - image
+id: node.parque_de_diversao.field_imagem_do_parque
+field_name: field_imagem_do_parque
+entity_type: node
+bundle: parque_de_diversao
+label: 'Imagem do parque'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

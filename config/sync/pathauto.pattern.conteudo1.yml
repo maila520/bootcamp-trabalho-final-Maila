@@ -1,0 +1,14 @@
+uuid: baddee2a-a9fa-4dfa-8f75-7e409d7416a0
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: conteudo1
+label: conteudo
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

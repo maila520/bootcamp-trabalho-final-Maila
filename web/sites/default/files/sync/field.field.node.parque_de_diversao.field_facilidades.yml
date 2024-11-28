@@ -1,0 +1,29 @@
+uuid: ef1b42e3-70c8-43ae-a0fa-78360bd92d4a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facilidades
+    - node.type.parque_de_diversao
+    - taxonomy.vocabulary.tags
+id: node.parque_de_diversao.field_facilidades
+field_name: field_facilidades
+entity_type: node
+bundle: parque_de_diversao
+label: Facilidades
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

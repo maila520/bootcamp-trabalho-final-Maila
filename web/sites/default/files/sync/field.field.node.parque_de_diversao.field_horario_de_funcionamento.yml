@@ -1,0 +1,24 @@
+uuid: dfca2765-1953-4557-a6f3-13c75ca2daea
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horario_de_funcionamento
+    - filter.format.full_html
+    - node.type.parque_de_diversao
+  module:
+    - text
+id: node.parque_de_diversao.field_horario_de_funcionamento
+field_name: field_horario_de_funcionamento
+entity_type: node
+bundle: parque_de_diversao
+label: 'Horário de funcionamento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text

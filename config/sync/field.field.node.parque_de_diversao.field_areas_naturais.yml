@@ -1,0 +1,29 @@
+uuid: 35468a98-295d-4ace-8e50-869edd1730a4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_areas_naturais
+    - node.type.parque_de_diversao
+    - taxonomy.vocabulary.areas_naturais
+id: node.parque_de_diversao.field_areas_naturais
+field_name: field_areas_naturais
+entity_type: node
+bundle: parque_de_diversao
+label: 'Áreas naturais'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      areas_naturais: areas_naturais
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: tags
+field_type: entity_reference

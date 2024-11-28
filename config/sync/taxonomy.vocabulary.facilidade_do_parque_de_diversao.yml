@@ -1,0 +1,9 @@
+uuid: 79db96ad-2dba-4b11-9b0f-0224c40ff444
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Facilidade do parque de diversão'
+vid: facilidade_do_parque_de_diversao
+description: null
+weight: 0
+new_revision: false

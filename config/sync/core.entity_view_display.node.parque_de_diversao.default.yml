@@ -1,0 +1,330 @@
+uuid: fbba5d28-56ff-4456-ae04-3b0c0d8903d0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.parque_de_diversao.body
+    - field.field.node.parque_de_diversao.field_area
+    - field.field.node.parque_de_diversao.field_areas_naturais
+    - field.field.node.parque_de_diversao.field_endereco
+    - field.field.node.parque_de_diversao.field_facilidades
+    - field.field.node.parque_de_diversao.field_horario_de_funcionamento
+    - field.field.node.parque_de_diversao.field_imagem_do_parque
+    - field.field.node.parque_de_diversao.field_preco
+    - field.field.node.parque_de_diversao.field_telefone
+    - node.type.parque_de_diversao
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          782256a6-fff1-4c0d-bbf0-55434be7217e:
+            uuid: 782256a6-fff1-4c0d-bbf0-55434be7217e
+            region: first
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_imagem_do_parque'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          fb9d6cf0-aff5-4e79-ba74-0f5c65e2d9a7:
+            uuid: fb9d6cf0-aff5-4e79-ba74-0f5c65e2d9a7
+            region: second
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_horario_de_funcionamento'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f14b78a8-6d1d-4217-88d9-3f9aa2f65b62:
+            uuid: f14b78a8-6d1d-4217-88d9-3f9aa2f65b62
+            region: second
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_facilidades'
+              label: Facilidades
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          0e982792-9c17-4954-b2cd-208ccefecc44:
+            uuid: 0e982792-9c17-4954-b2cd-208ccefecc44
+            region: second
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_areas_naturais'
+              label: 'Áreas naturais'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a4cacabb-e9d1-47ed-8461-3e657dfe8992:
+            uuid: a4cacabb-e9d1-47ed-8461-3e657dfe8992
+            region: content
+            configuration:
+              id: 'extra_field_block:node:parque_de_diversao:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+          9f6095e4-a21b-4881-abb9-d08baf166f38:
+            uuid: 9f6095e4-a21b-4881-abb9-d08baf166f38
+            region: content
+            configuration:
+              id: 'field_block:node:parque_de_diversao:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          cbdee94c-2040-4d90-9ed4-ec786e507636:
+            uuid: cbdee94c-2040-4d90-9ed4-ec786e507636
+            region: content
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_endereco'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          b59c1db7-5c38-447c-a615-b9463b37b0b0:
+            uuid: b59c1db7-5c38-447c-a615-b9463b37b0b0
+            region: content
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_preco'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          ac57c59a-0623-463f-b090-468c7b4c2396:
+            uuid: ac57c59a-0623-463f-b090-468c7b4c2396
+            region: content
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_facilidades'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          e4c1834b-1383-4271-ba09-635fc0d7b4e6:
+            uuid: e4c1834b-1383-4271-ba09-635fc0d7b4e6
+            region: content
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_area'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          eaea3de6-60c5-41e3-a8c5-36664c722f5c:
+            uuid: eaea3de6-60c5-41e3-a8c5-36664c722f5c
+            region: content
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_telefone'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          a0234460-8929-44a5-9197-6921c2ba5fce:
+            uuid: a0234460-8929-44a5-9197-6921c2ba5fce
+            region: content
+            configuration:
+              id: 'field_block:node:parque_de_diversao:field_areas_naturais'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+        third_party_settings: {  }
+id: node.parque_de_diversao.default
+targetEntityType: node
+bundle: parque_de_diversao
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_area:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_areas_naturais:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_endereco:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_facilidades:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_horario_de_funcionamento:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_imagem_do_parque:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_preco:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_telefone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

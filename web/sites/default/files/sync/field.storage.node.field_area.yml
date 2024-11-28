@@ -1,0 +1,20 @@
+uuid: f1da9a4f-747e-4fcf-899a-354a3485f897
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_area
+field_name: field_area
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

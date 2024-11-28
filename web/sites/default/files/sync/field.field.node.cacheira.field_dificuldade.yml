@@ -1,0 +1,29 @@
+uuid: 1eadd919-e6b4-4f11-8750-648e6e339088
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dificuldade
+    - node.type.cacheira
+    - taxonomy.vocabulary.tags
+id: node.cacheira.field_dificuldade
+field_name: field_dificuldade
+entity_type: node
+bundle: cacheira
+label: Dificuldade
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

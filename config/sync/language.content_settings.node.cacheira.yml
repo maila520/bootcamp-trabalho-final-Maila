@@ -1,0 +1,11 @@
+uuid: 72efd8c3-da7e-4b79-9979-0739b5aa2964
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.cacheira
+id: node.cacheira
+target_entity_type_id: node
+target_bundle: cacheira
+default_langcode: site_default
+language_alterable: false

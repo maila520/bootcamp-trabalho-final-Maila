@@ -1,0 +1,29 @@
+uuid: 5f1fdc96-24ae-4920-b3a3-d89f2bb52e30
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_midia
+    - media.type.remote_video
+    - node.type.cacheira
+id: node.cacheira.field_midia
+field_name: field_midia
+entity_type: node
+bundle: cacheira
+label: Cachoeiras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

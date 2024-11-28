@@ -1,0 +1,11 @@
+uuid: 565f4cf6-4a86-42ea-a03b-e866c0f431f4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.areas_naturais
+id: taxonomy_term.areas_naturais
+target_entity_type_id: taxonomy_term
+target_bundle: areas_naturais
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,17 @@
+uuid: d734bc4d-869c-4c53-93f8-7e74d7abb3a8
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Cachoeira
+type: cacheira
+description: "No Brasil, temos uma grande oferta de água doce que em alguns momentos se apresenta na forma de cachoeiras e quedas d'água que encantam os turistas."
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

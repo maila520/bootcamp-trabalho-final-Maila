@@ -1,0 +1,23 @@
+uuid: 150d7689-f2e9-4b47-b8eb-e089f2443888
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preco
+    - node.type.parque_de_diversao
+id: node.parque_de_diversao.field_preco
+field_name: field_preco
+entity_type: node
+bundle: parque_de_diversao
+label: Preço
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,57 @@
+uuid: f5651391-d8f2-4195-bc0c-4e8e67790969
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cacheira.body
+    - field.field.node.cacheira.field_altura
+    - field.field.node.cacheira.field_data
+    - field.field.node.cacheira.field_dificuldade
+    - field.field.node.cacheira.field_image
+    - field.field.node.cacheira.field_link_externo
+    - field.field.node.cacheira.field_localizacao
+    - field.field.node.cacheira.field_midia
+    - image.style.medium
+    - node.type.cacheira
+  module:
+    - image
+    - text
+    - user
+id: node.cacheira.teaser
+targetEntityType: node
+bundle: cacheira
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_altura: true
+  field_data: true
+  field_dificuldade: true
+  field_link_externo: true
+  field_localizacao: true
+  field_midia: true
+  langcode: true

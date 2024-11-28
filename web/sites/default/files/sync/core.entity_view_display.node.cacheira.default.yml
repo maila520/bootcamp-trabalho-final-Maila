@@ -1,0 +1,104 @@
+uuid: 5c8528f8-3885-4824-bbb7-0d639ad5bef2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.cacheira.body
+    - field.field.node.cacheira.field_altura
+    - field.field.node.cacheira.field_data
+    - field.field.node.cacheira.field_dificuldade
+    - field.field.node.cacheira.field_image
+    - field.field.node.cacheira.field_link_externo
+    - field.field.node.cacheira.field_localizacao
+    - field.field.node.cacheira.field_midia
+    - image.style.wide
+    - node.type.cacheira
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.cacheira.default
+targetEntityType: node
+bundle: cacheira
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_altura:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_data:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_dificuldade:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link_externo:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_localizacao:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_midia:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  langcode: true
+  links: true

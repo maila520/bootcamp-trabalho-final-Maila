@@ -1,0 +1,19 @@
+uuid: 5a067ddb-aff4-4c9d-95a5-b17c745f2cbf
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_endereco
+    - node.type.parque_de_diversao
+id: node.parque_de_diversao.field_endereco
+field_name: field_endereco
+entity_type: node
+bundle: parque_de_diversao
+label: Endereço
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

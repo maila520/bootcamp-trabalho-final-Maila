@@ -1,0 +1,32 @@
+uuid: 25b6a73d-428e-49ed-9ea7-171cec54f08d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.ultimas_cachoeiras_cadastradas
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__ultimas_cachoeiras_cadastradas_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:ultimas_cachoeiras_cadastradas-block_1'
+settings:
+  id: 'views_block:ultimas_cachoeiras_cadastradas-block_1'
+  label: 'Ultimas Cachoeiras Cadastradas'
+  label_display: visible
+  provider: views
+  views_label: 'Ultimas Cachoeiras Cadastradas'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      cacheira: cacheira

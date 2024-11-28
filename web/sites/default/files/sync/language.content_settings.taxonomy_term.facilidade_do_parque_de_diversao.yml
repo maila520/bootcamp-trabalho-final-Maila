@@ -1,0 +1,11 @@
+uuid: 9f5a0c7c-59c4-420b-b430-6488133de995
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.facilidade_do_parque_de_diversao
+id: taxonomy_term.facilidade_do_parque_de_diversao
+target_entity_type_id: taxonomy_term
+target_bundle: facilidade_do_parque_de_diversao
+default_langcode: site_default
+language_alterable: false

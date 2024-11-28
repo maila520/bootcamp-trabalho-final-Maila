@@ -1,0 +1,22 @@
+uuid: 6f26a908-6535-4632-af06-2e941868ed13
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: conteudo
+label: conteúdo
+type: 'canonical_entities:node'
+pattern: 'cachoeira/[node:title]'
+selection_criteria:
+  3659512f-e725-4f57-a73a-b09ef73dfe9e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3659512f-e725-4f57-a73a-b09ef73dfe9e
+    context_mapping:
+      node: node
+    bundles:
+      cacheira: cacheira
+selection_logic: and
+weight: 0
+relationships: {  }

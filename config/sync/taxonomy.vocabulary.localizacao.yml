@@ -1,0 +1,9 @@
+uuid: b3e5112f-e45a-4288-bd41-9294339b88f8
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Localização
+vid: localizacao
+description: null
+weight: 0
+new_revision: false

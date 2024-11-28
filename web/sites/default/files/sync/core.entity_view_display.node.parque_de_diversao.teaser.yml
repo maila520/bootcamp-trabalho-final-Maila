@@ -1,0 +1,45 @@
+uuid: 143d3bcc-9a15-4b51-bcf7-50c03b20e2e3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.parque_de_diversao.body
+    - field.field.node.parque_de_diversao.field_area
+    - field.field.node.parque_de_diversao.field_endereco
+    - field.field.node.parque_de_diversao.field_facilidades
+    - field.field.node.parque_de_diversao.field_horario_de_funcionamento
+    - field.field.node.parque_de_diversao.field_imagem_do_parque
+    - field.field.node.parque_de_diversao.field_preco
+    - field.field.node.parque_de_diversao.field_telefone
+    - node.type.parque_de_diversao
+  module:
+    - text
+    - user
+id: node.parque_de_diversao.teaser
+targetEntityType: node
+bundle: parque_de_diversao
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_area: true
+  field_endereco: true
+  field_facilidades: true
+  field_horario_de_funcionamento: true
+  field_imagem_do_parque: true
+  field_preco: true
+  field_telefone: true
+  langcode: true

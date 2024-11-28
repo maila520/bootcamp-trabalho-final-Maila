@@ -1,0 +1,24 @@
+uuid: 000daf14-504e-4e9d-8bee-6a3736bbb323
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.cachoeiras
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__cachoeiras_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:cachoeiras-block_1'
+settings:
+  id: 'views_block:cachoeiras-block_1'
+  label: 'conheça nossas cachoeiras'
+  label_display: visible
+  provider: views
+  views_label: 'conheça nossas cachoeiras'
+  items_per_page: '3'
+visibility: {  }

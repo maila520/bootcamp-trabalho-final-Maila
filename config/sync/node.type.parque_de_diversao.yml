@@ -1,0 +1,17 @@
+uuid: 32d48c80-7956-4836-a1a0-d7e566d316c6
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Parque de Diversão'
+type: parque_de_diversao
+description: 'Os parques de diversão possuem um local fixo, em oposição aos parques itinerantes, e são mais elaborados que simples parques urbanos ou playgrounds, geralmente fornecendo atrações que atraem especificamente certos grupos etários, bem como outras que atraem todas as idades.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

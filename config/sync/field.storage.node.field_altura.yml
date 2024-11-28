@@ -1,0 +1,20 @@
+uuid: 910f7c1c-a573-4b03-a17e-9c477921afe5
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_altura
+field_name: field_altura
+entity_type: node
+type: decimal
+settings:
+  precision: 12
+  scale: 5
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: cbb23a9b-63c5-4dda-a58d-911ab31d3961
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefone
+    - node.type.parque_de_diversao
+id: node.parque_de_diversao.field_telefone
+field_name: field_telefone
+entity_type: node
+bundle: parque_de_diversao
+label: Telefone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

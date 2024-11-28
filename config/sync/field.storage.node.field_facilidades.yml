@@ -1,0 +1,20 @@
+uuid: 6d255398-86ce-4a91-83f1-710c285b1d31
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_facilidades
+field_name: field_facilidades
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
