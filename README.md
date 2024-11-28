@@ -1,4 +1,4 @@
-# Projeto Drupal 11 - /Desafiofinal
+# Projeto Drupal 11 - **/Desafiofinal**
 
 ## Descrição
 Um site sobre turismo, onde o nome dele é Park Turismo sobre cachoeira e parque de diversão
@@ -12,10 +12,26 @@ Um site sobre turismo, onde o nome dele é Park Turismo sobre cachoeira e parque
 ## Instalação
 1. **Clone o repositório:**
    ```bash
-   git clone [URL inválido removido]
-Instale as dependências:
-cd seu-repositorio
-composer install
-Crie um banco de dados: [Instruções específicas para o seu banco de dados]
-Configure o settings.php: [Informações sobre como configurar o arquivo settings.php com as informações do seu banco de dados]
-Execute o script de instalação: [Instruções para executar o script de instalação do Drupal]
+   git clone https://github.com/maila520/bootcamp-trabalho-final-Maila.git
+   ```
+
+2. **Instale as dependências:**
+   ``` bash
+   cd bootcamp-trabalho-final-Maila
+   ```
+   
+   ``` bash
+   composer install
+   ```
+
+3. **Para abrir o drupal no navegador:**
+   ``` bash
+   drupal launch
+   ```
+
+
+Depois de executar o **drupal launche** ira abrir essa pagina no seu navegador:
+
+![Pagina inicial](pagina_inicial_projeto.PNG)
+
+
